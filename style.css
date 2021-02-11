@@ -1,0 +1,287 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    font-family: 'Segoe UI';
+    background-image: url("bg.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    min-height: 30px;
+    height: auto;
+    width: 100%;
+    background-color: #0984e3;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+.top-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menuBtn {
+    height: 60%;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;    
+    transition: 0.3s;
+}
+
+.rotated {
+    transform: rotate(-90deg);
+    transition: 0.3s;
+}
+
+.line {
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.small {
+    width: 70%;
+    transition: 0.3s;
+}
+
+.smallest {
+    width: 40%;
+    transition: 0.5s;
+}
+
+.menu {
+    display: none;
+    height: 300px;
+    width: 100%;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menuFlex {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.menu-item {
+    display: none;
+    transition: 1s;
+    opacity: 0;
+    margin: 10px;
+    height: 15%;
+}
+
+.show-item {
+    opacity: 1;
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.menu-bottom {
+    width: 100%;
+    height: 40%;
+    background-color: #ffffff20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.logo {
+    margin-left: 20px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+main {
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    background-color: #2d343650;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.about * {
+    font-weight: lighter;
+    font-size: 26px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.job {
+   font-weight: lighter; 
+}
+
+.intro {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    line-height: 150%;
+    text-align: justify;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    height: 180px;
+    width: 180px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section{
+    height: auto;
+    width: 100%;
+    background-color: #a29bfe50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.section-title {
+    padding: 20px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    padding: 5px;
+}
+
+/* .downBtn {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 2px solid #4b6584;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} */
+
+.downBtn > img {
+    height: 50px;
+    width: 50px;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    padding: 20px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+.project-image {
+    height: auto;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-image:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.contact {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: #0984e3;;
+    border-radius: 15px;
+}
+
+.talen {
+    height: 600px;
+}
+
+@media screen and (min-width: 992px){
+    
+    .menu-container {
+        width: 10%;
+    }
+
+    .logo-container {
+        width: 90%;
+    }
+
+    .contact {
+        width: 60%;
+    }
+
+
+}
